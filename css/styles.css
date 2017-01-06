@@ -1,15 +1,62 @@
+/* fresh: #4ABDAC;
+ * vermillion: #FC4A1A;
+ * sunshine: #F7B733;
+ * clean: #dfdce3;
+ *
+ *
+*/
+
 body {
 	margin: 0;
 	padding: 0;
+	height: 100vh;
 }
 
 #App {
-	height: 100vh;
 	display: flex;
+	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
+	min-height: 100vh;
+	background-color: #4ABDAC;
 }
 
 #container {
 	text-align: center;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	background-color: #dfdce3;
+	margin-top: auto;
+	padding: 24px;
+	border-radius: 10px;
+	width: 90%;
+	overflow-y: scroll;
+}
+
+#quote-content-container {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5em;
+}
+
+#title {
+	font-size: 2.5em;
+	margin-top: 24px;
+}
+
+button {
+	margin-top: auto;
+	font-size: 4em;
+	width: 100%;
+	border-style: none;
+	background-color: #F7B733;
+}
+
+.big {
+	font-size: 3em;
+	align-self: flex-start;
+	color: #4abdac;
 }
