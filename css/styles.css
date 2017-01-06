@@ -10,6 +10,6 @@ body {
 	justify-content: center;
 }
 
-.container {
-	
+#container {
+	text-align: center;
 }
