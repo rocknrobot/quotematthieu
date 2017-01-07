@@ -8,6 +8,9 @@ function changeColors() {
   $(".big").animate({
   	color: colors[color]
   }, 500);
+  $("i").animate({
+  	color: colors[color]
+  }, 500);
 }
 
 function getQuote() {
@@ -23,8 +26,13 @@ function clickNewQuote() {
 	changeColors();
 };
 
+function tweetQuote() {
+	window.open('http://twitter.com/intent/tweet?text=' + $('#content').text() + $('#title').text());
+}
+
 $(document).ready(function(){
   $("#container").hide();
   getQuote();
   $( "#update-quote" ).click(clickNewQuote);
+  $("i").click(tweetQuote);
 });
